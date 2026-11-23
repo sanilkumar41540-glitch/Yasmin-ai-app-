@@ -20,7 +20,7 @@ import kotlinx.coroutines.withContext
 data class Msg(val fromUser: Boolean, val text: String)
 
 class MainActivity : ComponentActivity() {
-    private val engine = YasminEngine(GeminiClient(BuildConfig.GEMINI_API_KEY))
+    private val engine = YasminEngine(GeminiClient(""))
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
